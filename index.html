@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mati Duma - Technical Theatre Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="spinner"></div>
+            <p>Loading Portfolio...</p>
+        </div>
+    </div>
+
+    <!-- Fireworks Container -->
+    <div id="fireworks-container" class="fireworks-container"></div>
+
+    <!-- Navigation Menu Button -->
+    <div class="menu-button">
+        <button id="menu-toggle" class="menu-btn" aria-label="Toggle menu">
+            <i class="fas fa-bars" id="menu-icon"></i>
+        </button>
+    </div>
+
+    <!-- Half-Page Menu Overlay -->
+    <div id="menu-overlay" class="menu-overlay">
+        <nav class="menu-nav">
+            <ul class="menu-list">
+                <li><a href="#hero" class="menu-link" data-section="hero"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="#about" class="menu-link" data-section="about"><i class="fas fa-user"></i>About-Me</a></li>
+                <li><a href="#portfolio" class="menu-link" data-section="portfolio"><i class="fas fa-briefcase"></i>Port-folio</a></li>
+                <li><a href="#downloads" class="menu-link" data-section="downloads"><i class="fas fa-download"></i>Down-loads</a></li>
+                <li><a href="#contact" class="menu-link" data-section="contact"><i class="fas fa-envelope"></i>Con-tact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="video-background">
+                <video autoplay muted loop>
+                    <source src="placeholder-video.mp4" type="video/mp4">
+                </video>
+                <div class="video-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <h1 class="hero-title">Mati Duma</h1>
+                <p class="hero-subtitle">Technical Theatre Artist</p>
+                <p class="hero-description">Illuminating stories through innovative lighting, sound, and set design</p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">View Portfolio</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>I am a passionate technical theatre artist with expertise in lighting design, sound engineering, and set construction. My journey in theatre began with a fascination for how technical elements can transform storytelling and create immersive experiences for audiences.</p>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <i class="fas fa-lightbulb"></i>
+                                <h3>Lighting Design</h3>
+                                <p>Creating atmospheric and dramatic lighting that enhances storytelling</p>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-volume-up"></i>
+                                <h3>Sound Engineering</h3>
+                                <p>Designing immersive soundscapes and managing live audio systems</p>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-hammer"></i>
+                                <h3>Set Design</h3>
+                                <p>Building and designing sets that bring productions to life</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio-section">
+            <div class="container">
+                <h2 class="section-title">Portfolio</h2>
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="lighting">Lighting</button>
+                    <button class="filter-btn" data-filter="sound">Sound</button>
+                    <button class="filter-btn" data-filter="set">Set Design</button>
+                </div>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item" data-category="lighting">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Lighting Project 1">
+                        <div class="portfolio-overlay">
+                            <h3>Dramatic Lighting Design</h3>
+                            <p>Shakespeare's Macbeth</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="sound">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Sound Project 1">
+                        <div class="portfolio-overlay">
+                            <h3>Live Sound Engineering</h3>
+                            <p>Musical Theatre Production</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="set">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Set Project 1">
+                        <div class="portfolio-overlay">
+                            <h3>Minimalist Set Design</h3>
+                            <p>Contemporary Drama</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Downloads Section -->
+        <section id="downloads" class="downloads-section">
+            <div class="container">
+                <h2 class="section-title">Downloads</h2>
+                <div class="downloads-grid">
+                    <div class="download-item">
+                        <i class="fas fa-file-pdf"></i>
+                        <h3>Curriculum Vitae</h3>
+                        <p>Complete professional CV with experience and qualifications</p>
+                        <a href="#" class="download-btn" data-file="cv.pdf">Download CV</a>
+                    </div>
+                    <div class="download-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Academic Record</h3>
+                        <p>Official academic transcripts and certifications</p>
+                        <a href="#" class="download-btn" data-file="academic-record.pdf">Download Record</a>
+                    </div>
+                    <div class="download-item">
+                        <i class="fas fa-id-card"></i>
+                        <h3>Identity Document</h3>
+                        <p>Official identification documentation</p>
+                        <a href="#" class="download-btn" data-file="id-document.pdf">Download ID</a>
+                    </div>
+                    <div class="download-item">
+                        <i class="fas fa-folder"></i>
+                        <h3>Complete Portfolio</h3>
+                        <p>Full portfolio with project documentation and images</p>
+                        <a href="#" class="download-btn" data-file="portfolio.pdf">Download Portfolio</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Let's Collaborate</h3>
+                        <p>I'm always excited to work on new theatrical projects and collaborate with fellow artists.</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>mati.duma@gmail.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>+2773 0000 822</span>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                        <input type="hidden" name="form-name" value="contact">
+                        <p style="display: none;">
+                            <label>Don't fill this out if you're human: <input name="bot-field"></label>
+                        </p>
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Mati Duma. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating Social Icons -->
+    <div id="floating-social" class="floating-social">
+        <a href="https://instagram.com/matiduma" class="social-icon instagram" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://linkedin.com/in/matiduma" class="social-icon linkedin" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://twitter.com/matiduma" class="social-icon twitter" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://facebook.com/matiduma" class="social-icon facebook" aria-label="Facebook">
+            <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://youtube.com/matiduma" class="social-icon youtube" aria-label="YouTube">
+            <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://tiktok.com/@matiduma" class="social-icon tiktok" aria-label="TikTok">
+            <i class="fab fa-tiktok"></i>
+        </a>
+        <a href="https://wa.me/1234567890" class="social-icon whatsapp" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://t.me/matiduma" class="social-icon telegram" aria-label="Telegram">
+            <i class="fab fa-telegram"></i>
+        </a>
+        <a href="https://reddit.com/u/matiduma" class="social-icon reddit" aria-label="Reddit">
+            <i class="fab fa-reddit"></i>
+        </a>
+        <a href="https://twitch.tv/matiduma" class="social-icon twitch" aria-label="Twitch">
+            <i class="fab fa-twitch"></i>
+        </a>
+        <a href="tel:+1234567890" class="social-icon phone" aria-label="Phone">
+            <i class="fas fa-phone"></i>
+        </a>
+        <a href="mailto:mati.duma@email.com" class="social-icon email" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
